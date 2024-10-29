@@ -1,0 +1,117 @@
+.notes-app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.notes-app h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.notes-app input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+}
+
+.note-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.note-input textarea {
+  width: 70%;
+  height: 60px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  resize: none;
+}
+
+.note-input button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.note-input button:hover {
+  background-color: #45a049;
+}
+
+.color-picker {
+  display: flex;
+  gap: 10px;
+}
+
+.color-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.color-dot.selected {
+  border: 2px solid #333;
+}
+
+.color-dot.pink {
+  background-color: #f28b8b;
+}
+
+.color-dot.purple {
+  background-color: #b28fd6;
+}
+
+.color-dot.yellow {
+  background-color: #f4d35e;
+}
+
+.color-dot.blue {
+  background-color: #76c7c0;
+}
+
+.color-dot.green {
+  background-color: #a8e6cf;
+}
+
+.notes-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note-item {
+  padding: 10px;
+  min-width: 120px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.note-item:hover {
+  transform: scale(1.05);
+}
